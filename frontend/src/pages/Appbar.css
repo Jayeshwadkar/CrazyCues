@@ -1,0 +1,359 @@
+.container {
+    min-height: 50vh;
+    background-image: linear-gradient(to right, rgba(0, 64, 128, 0.6), rgba(239, 36, 160, 0.4)), url('../assets/home.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.container-pricing {
+    min-height: 50vh;
+    background-image: linear-gradient(to right, rgba(0, 64, 128, 0.6), rgba(239, 36, 160, 0.4)), url('../assets/home.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.container-food {
+    min-height: 50vh;
+    background-image: linear-gradient(to right, rgba(0, 64, 128, 0.6), rgba(239, 36, 160, 0.4)), url('../assets/home.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+   
+    position: relative;
+}
+
+.container-gallery {
+    min-height: 50vh;
+    background-image: linear-gradient(to right, rgba(0, 64, 128, 0.6), rgba(239, 36, 160, 0.4)), url('../assets/home.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 30px;  /* Default height for xs */
+    width: auto;
+    margin-right: 16px; /* Equivalent to mr: 2 */
+
+    /* Responsive styling */
+}
+
+
+
+.toggle-icon {
+    display: none; /* Hidden by default for larger screens */
+    color: white;
+  }
+
+  .flex-wrap {
+    display: flex;
+    gap: 8px;
+    transition: height 0.3s ease-in-out;
+  }
+
+.button-link {
+    color: white !important;    font-size: 0.8rem; /* Default font size for xs */
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+}
+
+.button-link:hover {
+    background-color: #18ffff; /* Hover background */
+    color: white !important;}
+     
+    
+
+ 
+      .grid-container {
+        max-width: 1000px;
+    }
+    
+    .inner-box {
+        background-color: #00e5ff;
+        padding: 24px; /* p: 2 corresponds to 16px padding */
+      
+        color: #0e1739;
+        width: 270px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .inner-box h6 {
+        font-weight: 800;
+        font-size: 20x;
+        text-decoration: none !important;
+        font-family: "Montserrat", Sans-serif;
+    }
+
+
+      .box-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 60vh;
+        margin-bottom: 5%;
+    }
+      .box-center bg-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+       
+        margin-bottom: 2%;
+      }
+
+      .card-container {
+        background-color: #0e1739;
+        padding: 16px; /* p: 3 corresponds to 24px padding */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      
+        color: #00e5ff;
+        background-image: radial-gradient(#00e5ff 2.1px, transparent 3px);
+        background-size: 26px 23px;
+        height: 220px;
+        width: 310px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+
+    }
+    
+    .card-container:hover {
+        transform: scale(1.05); /* Bump effect on hover */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Shadow for lifted effect */
+    }
+    
+    
+    
+
+    .card-container-membership {
+        background-color: #fc4c6c;
+        padding: 16px; /* p: 3 corresponds to 24px padding */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        color: #fc4c6c;
+        background-image: radial-gradient(#0e1739 2.1px, transparent 3px);
+        background-size: 26px 23px;
+        height: 220px;
+        width: 310px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-container-membership:hover {
+        transform: scale(1.05); /* Bump effect on hover */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Shadow for lifted effect */
+
+        
+    }
+    
+    .inner-box-membership {
+        background-color: #0e1739;
+        padding: 29px; /* p: 2 corresponds to 16px padding */
+       
+        color: #ffff;
+        width: 270px;
+        cursor: pointer;
+    }
+    
+    .inner-box-membership h6 {
+        font-weight: 800;
+        font-size: 20px;
+        font-family: "Montserrat", Sans-serif;
+    }
+    .card-container-event {
+        background-color: #0e1739;
+        padding: 16px; /* p: 3 corresponds to 24px padding */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      
+        color: #ffea00;
+        background-image: radial-gradient(#ffea00 2.1px, transparent 3px);
+        background-size: 26px 23px;
+        height: 220px;
+        width: 310px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-container-event:hover {
+        transform: scale(1.05); /* Bump effect on hover */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Shadow for lifted effect */
+    }
+    
+    .inner-box-event {
+        background-color: #ffea00;
+        padding: 24px; /* p: 2 corresponds to 16px padding */
+       
+        color: #0e1739;
+        width: 270px;
+
+       
+    }
+    
+    .inner-box-event h6 {
+        font-weight: 800;
+        font-size: 20px;
+        text-decoration: none !important;
+        font-family: "Montserrat", Sans-serif;
+    }
+
+
+      @media (min-width: 600px) {
+        .toolbar {
+            padding-left: 32px; /* Equivalent to paddingX for sm: 4 */
+            padding-right: 32px;
+        }
+        .logo {
+            height: 40px;  /* Height for sm */
+        }
+        .flex-wrap {
+            gap: 16px; /* Gap for sm: 2 */
+        }
+        .button-link {
+            font-size: 1rem;
+        }
+
+        
+       
+    }
+
+
+
+    @media (max-width: 900px) {
+        .toggle-icon {
+          display: flex; /* Show toggle icon on small screens */
+          color: white;
+          font-weight: bold;
+        }
+        
+        .flex-wrap {
+          display: none; /* Hide menu items by default on mobile */
+          flex-direction: column;
+          align-items: flex-start;
+          background-color: #0A0743; /* Background color for mobile menu */
+          position: absolute;
+          top: 5px; /* Place under the AppBar */
+          width: 100%;
+          padding: 10px 0;
+          min-height: 49vh;
+           margin-bottom: 5%;
+    
+        }
+      
+        .flex-wrap.open {
+          display: flex; /* Show menu items when 'open' class is applied */
+        }
+      }
+  
+   
+
+    .button-link.active {
+        background-color: #18ffff;
+        color: white !important;}
+
+      
+
+      @media (max-width:1000px) {
+
+
+        .box-center.bg-image{
+            height: 1000px;
+       
+        }
+        .inner-box {
+            background-color: #00e5ff;
+            padding: 16px; /* p: 2 corresponds to 16px padding */
+          
+            color: #0e1739;
+            width: 100%;
+            cursor: pointer;
+    
+    
+    
+            
+        }
+        .card-container,
+        .card-container-membership,
+        .card-container-event{
+          width: 90%; /* Make boxes full width */
+          margin-bottom: 16px; /* Add space between boxes */
+          justify-content: center;
+          margin-left: 6%;
+        }
+
+     
+    
+    
+        .inner-box-membership {
+            background-color: #0e1739;
+            padding: 16px; /* p: 2 corresponds to 16px padding */
+           
+            color: #ffff;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 16px;
+           
+        }
+        
+        .inner-box-membership h6 {
+            font-weight: bold;
+        }
+      
+        
+        .card-container-event:hover {
+            transform: scale(1.05); /* Bump effect on hover */
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Shadow for lifted effect */
+        }
+        
+        .inner-box-event {
+           
+            padding: 16px; /* p: 2 corresponds to 16px padding */
+            width: 100%;
+        }
+    
+        
+      }
+
+     
+
+      /* Style the active menu item */
+      .button-link.active {
+        background-color: #00ffff; /* Adjust to match the highlighted color */
+        color: #000; /* Adjust text color as needed */
+      }
+
+
+
+   

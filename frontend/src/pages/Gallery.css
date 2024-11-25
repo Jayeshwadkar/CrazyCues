@@ -1,0 +1,303 @@
+.gallery {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between images */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Apply a marquee effect to the item1 class */
+.item1 {
+    width: 100%; /* Full width for larger images */
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    animation: scrollUp 5s linear infinite; /* Animation for scroll effect */
+}
+
+
+.map-container {
+    width: 100%;
+    height: 400px;
+  }
+  .map-iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(100%); /* Start from bottom */
+    }
+    100% {
+        transform: translateY(-100%); /* End at top */
+    }
+}
+
+/* General style for all images */
+.item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+}
+
+/* Style for specific image sizes and grid positions */
+.item1, .item2 {
+    width: 100%; /* Full width for larger images */
+    height: 300px;
+}
+
+.item3, .item4, .item5, .item6 {
+    width: calc(50% - 10px); /* Smaller items */
+    height: 250px;
+}
+
+.item:hover {
+    transform: scale(1.05); /* Slightly increase the size of the image on hover */
+}
+
+
+/* General Styling */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #edd9f7, #edd9f7);
+    background-size: 300% 300%;
+    animation: gradientMove 15s ease infinite;
+   
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    overflow: hidden;
+    perspective: 1500px; /* Adds 3D effect on hover */
+    transition: all 0.5s ease-out;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+/* Slide-in Animation for the Title */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fancy Mosaic Layout */
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+    perspective: 1000px;
+    transition: transform 0.5s ease-out;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.4s ease, opacity 0.3s ease;
+    will-change: transform, box-shadow, filter;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px); /* Glassmorphism */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+/* Hover Effects: Rotate and Scale */
+.gallery-item:hover {
+    transform: scale(1.1) rotateY(10deg) rotateX(10deg) translateY(-10px); /* Hover Tilt & Scale */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); /* Shadow deepens */
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.2) rotate(5deg); /* Image zoom effect */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Glow effect */
+}
+
+/* Asymmetrical Grid Layout */
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+    grid-template-rows: auto; 
+}
+
+/* Random Positioning for Items (Mosaic Style) */
+.gallery-item:nth-child(odd) {
+    transform: rotate(5deg) translateY(-10px); /* Slight rotation for some items */
+}
+
+.gallery-item:nth-child(even) {
+    transform: rotate(-5deg) translateY(10px); /* Slight rotation for some items */
+}
+
+/* Image Styling with Smooth Transition */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.4s ease;
+    border-radius: 15px;
+    position: relative;
+    z-index: 0;
+    transform: scale(1) rotate(0deg);
+}
+
+/* Image Load Fade-in */
+.gallery-item img {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.gallery-item img.loaded {
+    opacity: 1;
+}
+
+/* Tooltip for Image */
+.gallery-item .tooltip {
+    display: none;
+} 
+
+.gallery-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hover Tilt Effect */
+.gallery-item:hover {
+    transform: perspective(1000px) rotateY(15deg) rotateX(15deg) scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .image-row {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .image-row {
+        grid-template-columns: 1fr; /* 1 item per row on small screens */
+    }
+}
+
+/* Lightbox Styling */
+.ReactModal__Overlay {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.ReactModal__Content {
+    transform: scale(0.8);
+    transition: transform 0.5s ease-in-out;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: #000;
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+  /* Gallery Container */
+  .gallery {
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  
+  /* Gallery Grid and Image Styles */
+  .react-photo-gallery--gallery img {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  /* Image Fade-In and Move-Up Animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hover Effects */
+  .react-photo-gallery--gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Lightbox Styles */
+  .ReactModal__Content {
+    padding: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+  
+  .ReactModal__Content--after-open {
+    transform: scale(1);
+  }
+  
+  .ReactModal__Content--before-close {
+    transform: scale(0.9);
+  }
+  
+  

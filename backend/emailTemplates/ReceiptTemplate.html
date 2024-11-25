@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .receipt {
+            background: white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        .header img {
+            width: 89px;
+            height: 35px;
+        }
+        .header h2 {
+            margin: 5px 0;
+        }
+        .header a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .content {
+            padding: 10px 0;
+            text-align: center;
+        }
+        .totals {
+            text-align: center;
+            font-size: 24px;
+            color: #3498db;
+            margin: 20px 0;
+        }
+        .totals span {
+            display: block;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .footer img {
+            width: 98px;
+            height: 24px;
+        }
+        .time-clock {
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        .time-clock img {
+            width: 100px;
+            height: 100px;
+            opacity: 0.1;
+        }
+        .show-details {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .show-details a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .teeth {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: repeating-linear-gradient(
+                -45deg,
+                white,
+                white 10px,
+                #f0f0f0 10px,
+                #f0f0f0 20px
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <div class="header">
+            <img src="https://crazycues.com/wp-content/uploads/2024/05/crazy-cues-logo.png" width="100%" height="30px" alt="Shop Icon">
+            <h2>Crazycues Tournament</h2>
+            <h4>{customerName}<br><br>+1-{mobileNo}</h4>
+        </div>
+        <div class="content">
+            <p>Subtotal <span>${subTotal}</span></p>
+            <p>Total Taxes <span>$0.00</span></p>
+            <div class="totals">
+                <span>Total</span>
+                ${amount}
+            </div>
+           
+            <p>Order ID: {orderId}</p>
+        </div>
+        
+        <div class="footer">
+            <img src="https://cdn.prod.website-files.com/6311c84a0d09395f09cb68e2/63631be013c0df04ff71f16c_clover-logo-primary-rgb-1121-green-grey-2022-np%20(2).webp" alt="Clover Icon">
+        </div>
+    </div>
+</body>
+</html>

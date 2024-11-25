@@ -1,0 +1,564 @@
+/* Lock the body scroll when popup is active */
+body.popup-open {
+    overflow: hidden; /* Prevent scrolling on the body */
+}
+
+/* Popup Container */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    overflow-y: auto; /* Allow scrolling inside the popup if needed */
+}
+
+/* Popup Image */
+.popup-image {
+    max-width: 50%; /* Adjusted to reduce width */
+    max-height: 60%; /* Adjusted to reduce height */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 4%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+
+
+
+/* Scrollable Image Wrapper */
+.popup-image-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure the close button is positioned relative to this container */
+    overflow-y: auto; /* Enable scrolling if necessary */
+}
+
+/* Remove Scrollbar */
+.popup-image-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Close Button */
+.icon-btn {
+    position: absolute;
+    top: 1%; /* Adjust as needed */
+    right: 15%; /* Adjust as needed */
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
+    .center-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+        margin-bottom: 5%;
+        font-family: 'Arial', sans-serif;
+        background-color: #ffffff;
+        flex: 1;
+        width: 100%;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .flex-center-relative {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+    }
+    .box-style {
+        width: 250px; 
+        height: 250px;
+        background-color: #d10045;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 16px; 
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        border-radius: 5px; 
+        position: relative; 
+    }
+
+    .box-style-2 {
+        width: 250px; 
+        height: 350px;
+        background-color: #00a4e4;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        border-radius: 8px; 
+        z-index: 1000;
+    }
+
+   
+    
+    
+    
+   
+   
+   
+                
+    .flex-center-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+        margin-bottom: 5%;
+        font-family: 'Arial', sans-serif;
+        background-color: #ffffff;
+        flex: 1;
+        width: 100%;
+        gap: 50px;
+    }
+    
+    .box-margin-padding {
+     
+        margin-top: 16px; /* xs: 4 corresponds to 16px */
+        max-width: 400px;
+        text-align: left;
+    }
+
+    .typography1-heading{
+        font-weight: 900 !important;
+        font-size: 50px !important; 
+        color: #212121;
+        font-family: 'Montserrat', sans-serif !important;
+        line-height: 1.2em !important;
+       
+    }
+    .typography-RASSON{
+        font-weight: 900 !important;
+        font-size: 55px !important; 
+        color: #212121;
+        font-family: 'Montserrat', sans-serif !important;
+        line-height: 1.2em !important;
+        margin-bottom: 16px;
+    }
+    
+    .typography-body {
+        line-height: 1.8 !important;
+        vertical-align: baseline;
+        color: #54595f;
+        margin-top: 6% !important;
+        word-spacing: 2px !important; /* Adjust this value for more space between words */
+        letter-spacing: 0.5px; /* Optional: Adjust letter spacing as needed */
+       
+    }
+    
+    .button-price-list {
+        padding: 17px 18px 17px 18px;
+        border: 2px solid black !important; /* Use !important to override Material-UI styles */
+        color: black !important; /* Ensure text color is black */
+        font-weight: bold !important;
+        font-size: 16px;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover */
+      }
+      
+      .button-price-list:hover {
+        background-color: black;
+        color: white !important;
+        border-color: black !important; /* Ensure hover border color is black */
+      }
+      
+    
+    .flex-direction-box {
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex-direction: column; /* Default for xs */
+    }
+       
+    .box-background {
+        width: 280px; /* Default for xs */
+        height: 350px; /* Default for xs */
+        background-color: #00a4e4;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        border-radius: 2px;
+        z-index: 1000;
+    }
+    .box-snooker {
+        width: 250px; /* Default for xs */
+        height: 250px; /* Default for xs */
+        background-color: #d10045;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        border-radius: 2px;
+        margin-left: 0;
+        margin-bottom: 16px; /* Default margin-bottom for xs */
+    }
+
+    .box-bowl1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 85vh;
+        margin-bottom: 5%;
+        background-image: linear-gradient(to right, rgba(0, 64, 128, 0.6), rgba(239, 36, 160, 0.4)),url('../assets/persnickety-prints-PpiSQO21htY-unsplash_r1_c1.jpg');
+    }
+    .container-box {
+        display: flex;
+        gap: 5rem; /* Adjust gap as needed */
+    }
+    
+    .image-box {
+        width: 270px;
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+    }
+    
+        
+    
+    
+      .pong-box {
+        background-color: #00a4e4;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+      }
+      
+      /* Responsive styling for different screen sizes */
+      .pong-box-xs {
+        width: 280px;
+        height: 350px;
+      }
+      
+      .pong-box-sm {
+        width: 380px;
+        height: 480px;
+      }
+      .custom-box {
+        max-width: 400px;
+        text-align: center; /* Default for xs */
+        margin-left: 0;
+        margin-top: 4rem; /* Default for xs */
+      }
+
+      .stiga-title {
+        font-weight: 900;
+        font-size: 38px;
+        color: #212121;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.2em;
+        margin-bottom: 0.5em;
+      }
+      
+      .stiga-body {
+        line-height: 1.8em;
+        vertical-align: baseline;
+      }
+      
+      .stiga-button {
+        padding: 10px 10px;
+        border-color: black;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      
+      .stiga-button:hover {
+        background-color: black;
+        color: white;
+      }
+      
+      .map-container {
+        width: 100%;
+        height: 400px;
+      }
+      
+      .map-iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .box-content {
+    margin-top: 20px; /* xs: 4 corresponds to 16px */
+    max-width: 400px;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 5%;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    flex: 1;
+    width: 100%;
+    
+    
+}
+
+
+.button-style {
+    padding: 10px 10px;
+    border-color: black;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-style:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+   
+    .box-style {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 0;
+    }
+    .box-style-2 {
+        width: 350px;
+        height: 480px;
+    }
+    .flex-direction-box {
+        flex-direction: row; /* sm breakpoint for row direction */
+    }
+    .box-background {
+        width: 380px; /* sm breakpoint for width */
+        height: 480px; /* sm breakpoint for height */
+    }
+   
+    .flex-container {
+        flex-direction: row;
+    }
+    
+      .pong-box-xs {
+        width: 380px;
+        height: 480px;
+      }
+      .custom-box {
+        text-align: left; /* For md and above */
+        margin-left: 6rem;
+        margin-top: 0;
+      }
+}
+
+
+
+
+.decor-img {
+    position: absolute;
+    top:300px;
+    left: 0;
+    width: 100px; /* adjust size as needed */
+    height: 100px; /* adjust size as needed */
+}
+.decor-image2 {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+  }
+@media (max-width: 1000px) {
+    .box-margin-padding {
+        margin-left: 48px; /* md: 6 corresponds to 48px */
+        margin-top: 0;
+        text-align: left;
+    }
+    .box-snooker {
+        width: 400px; /* md breakpoint for width */
+        height: 400px; /* md breakpoint for height */
+    }
+    .box-content {
+        margin-left: 20px;
+        margin-top: 0;
+        text-align: left;
+        margin-right: 10px;
+    }
+    .box-style-2 {
+        display: none !important;
+    }
+    .decor-img {
+        display: none !important;
+    }
+
+        .box-background{
+        display: none;
+    }
+    .box-margin-padding{
+        margin-right: 50px;
+    }
+
+
+    
+   /* Container for the images inside the background image */
+.container-box {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 2rem; /* Adjust gap between images */
+    width: 100%; /* Make sure the container takes full width */
+    height: 100%; /* Make sure the container takes full height */
+    max-height: 1000px; /* Limit maximum height of container */
+    position: absolute; /* Allow the container to be inside the bowl background */
+    top: 0;
+    left: 0;
+    justify-content: flex-start; /* Align items to the start vertically */
+    padding-top: 50px; /* Add some padding to ensure images are inside the background */
+  }
+  
+  /* Each individual image box */
+  .image-box {
+    flex: 0 0 33%; /* Make sure each image takes 1/3 of the available height */
+    width: 100%; /* Set width to 100% of container */
+    height: auto; /* Allow height to adjust proportionally */
+    background-size: cover; /* Ensure background image covers the entire box */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    position: relative;
+  }
+  
+  /* The bowl background */
+  .box-bowl1 {
+    width: 100%; /* Set width to 100% */
+    height: 140vh; /* Set the height to cover the full viewport */
+    background-size: cover; /* Ensure the bowl image covers the entire container */
+    background-position: center; /* Center the bowl image */
+    position: relative; /* Ensure it's a positioned container */
+    display: flex; /* Make it a flex container */
+    justify-content: center; /* Align the content horizontally */
+    align-items: flex-start; /* Align the content vertically at the top */
+    margin-bottom: 2%;
+  }
+  
+ 
+ 
+}
+
+/* CSS for 767px and below */
+@media (max-width: 767px) {
+    .center-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0px;
+        gap:20px
+    }
+
+    .flex-center-relative {
+        order: 2; /* Place the image container below the content */
+        width: 100%;
+
+    }
+
+    .box-content {
+        order: 1; /* Ensure the text and button come first */
+        text-align: left; /* Align entire content to the left */
+        /* Add left padding for alignment */
+        margin-bottom: 2%;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+
+     .box-style-2 {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 16px;
+    }
+
+    .decor-img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+ 
+
+    .button-price-list {
+        font-size: 16px;
+        padding: 10px 20px;
+        border: 2px solid #212121;
+        color: #212121;
+        align-self: flex-start; /* Align button to the left */
+        margin-top: 8px; /* Space between text and button */
+       
+    }
+
+
+
+    .flex-center-box {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .flex-direction-box {
+        order: 2; /* Place the image container below the content */
+        width: 100%;
+    }
+
+    .box-margin-padding {
+        margin-right: 0; /* Reset margin for smaller screens */
+        text-align: left; /* Center align text */
+        margin-bottom: 20px;
+    }
+
+    .button-price-list {
+        margin-top: 15px; /* Add space between text and button */
+    }
+
+    .box-snooker {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 16px;
+    }
+   
+    
+    
+  
+
+}
+
+@media (max-width: 500px) {
+    .box-bowl1 {
+        
+        height: 120vh;
+       
+      }
+
+}
+
+
+

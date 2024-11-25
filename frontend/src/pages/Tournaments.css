@@ -1,0 +1,106 @@
+
+.pp-54KRPH7ZD2ZH4{
+text-align:center;
+border:none;
+border-radius:1.5rem;
+min-width:11.625rem;
+padding:0 2rem;
+height:2.625rem;
+font-weight:bold;
+background-color:#FFD140;
+color:#000000;
+font-family:"Helvetica Neue",Arial,sans-serif;
+font-size:1rem;
+line-height:1.25rem;
+cursor:pointer;
+}
+.pp-54KRPH7ZD2ZH4:hover:not(:disabled) {
+  background-color: #FFC107; /* Darker yellow on hover */
+}
+
+/* Disabled button style */
+.pp-54KRPH7ZD2ZH4:disabled {
+  background-color: #E0E0E0; /* Light gray background */
+  color: #A0A0A0; /* Gray text */
+  
+}
+.paypalform{
+  display:inline-grid;
+  margin-top: 10%;
+  justify-items:center;
+  align-content:start;
+  gap:0.5rem;
+}
+.paypalimg{
+  height:0.875rem;
+  vertical-align:middle;
+}
+.opening-hours-divider .star-icon {
+    color: #18ffff;
+    margin: 0 10px;
+  }
+  
+  .opening-hours-divider {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+     
+  .opening-hours-divider .divider {
+    border-bottom: 3px solid #18ffff;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+          }
+          .map-iframe {
+            border: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+        @media (min-width: 600px) {
+            .toolbar5 {
+                padding-left: 32px; /* Equivalent to paddingX for sm: 4 */
+                padding-right: 32px;
+            }
+            .logo5 {
+                height: 40px;  /* Height for sm */
+            }
+            .flex-wrap5 {
+                gap: 16px; /* Gap for sm: 2 */
+            }
+            .button-link5 {
+                font-size: 1rem;
+            }
+
+        
+        }
+
+
+        .custom-button {
+            margin-right: 50px !important;
+            width: 100% !important;
+            background-color: #18ffff !important;
+            color :#212121 !important;
+            padding: 20px 20px 20px 20px !important;
+            font-size: 16px!important;
+            font-family: "Montserrat", Sans-serif!important;
+            font-weight: 800 !important;
+            transition: background-color 0.3s ease, color 0.3s ease !important;
+        }
+         
+        .custom-button:hover {
+            background-color: #251153 !important;
+            color: #fff !important;
+        }
+
+   

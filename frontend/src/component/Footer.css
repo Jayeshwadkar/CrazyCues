@@ -1,0 +1,138 @@
+/* Footer Container */
+.footer-container {
+    background-color: #1c1c1e;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .container-style {
+    max-width: 1200px; /* Equivalent to 'lg' breakpoint in Material-UI */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  
+  .about-section {
+  font-weight: bold !important;
+    margin-bottom: 25px; /* Adjust spacing as needed */
+  }
+  
+  .body-text {
+    color: #98a2aa;
+    line-height: 1.5 !important;
+    margin-bottom: 8px; /* Optional, for spacing between items */
+  }
+
+
+  .contact-heading {
+    font-weight: bold !important;
+    margin-bottom: 16px; /* Equivalent to 'mb: 2' */
+    text-align: left;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 8px; /* Adjust the spacing between items */
+    color: #98a2aa;
+    line-height: 1.5 !important;  }
+  
+  .contact-info-icon {
+    margin-right: 8px; /* Equivalent to 'mr: 1' */
+    color: #98a2aa;
+  }
+  
+  .email-link {
+    color: #98a2aa;
+    text-decoration: none; /* Remove underline initially */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .email-link:hover {
+    color: #18FFFF; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .follow-us-heading {
+    font-weight: bold !important;
+    margin-bottom: 16px; /* Equivalent to 'mb: 2' */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 8px; /* Equivalent to 'gap: 1' */
+  }
+  
+  .social-icon a {
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    cursor: pointer;
+  }
+  
+  .facebook-icon {
+    color: #4267B2;
+  }
+  
+  .instagram-icon {
+    color: #C13584;
+  }
+
+
+  /* Title styling */
+.opening-hours-heading1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: bold !important;
+  margin-bottom: 16px; /* Adds spacing below the title */
+  color: #ffffff; /* White text for the heading */
+}
+
+/* Box container */
+.opening-hours-container1 {
+  background-color: #1b1e24; /* Matches the dark background */
+  padding: 14px; /* Adds space inside the box */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for better visibility */
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Adds space between rows */
+}
+
+/* Rows inside the box */
+.opening-hours-row1 {
+  display: flex;
+  justify-content: space-between; /* Aligns the day and time */
+  color: #98A2AA; /* Light gray text */
+  font-size: 15px; /* Adjusts the font size to match the design */
+  line-height: 1;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+
+/* Optional: Remove bottom margin for the last row */
+.opening-hours-row:last-child {
+  margin-bottom: 0;
+}
+
+
+
+  .footer-bottom {
+    margin-top: 32px; /* Equivalent to 'mt: 4' */
+    border-top: 1px solid #333;
+    padding-top: 16px; /* Equivalent to 'pt: 2' */
+    text-align: center;
+  }
+  
+  .footer-link {
+    margin-bottom: 8px; /* Equivalent to 'mb: 1' */
+    color: #98a2aa;
+  }
+  
+  .footer-text {
+    color: #98a2aa;
+  }
+    
